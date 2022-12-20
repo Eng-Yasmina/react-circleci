@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello React from circleci
+          Hello React from Netlify
         </p>
         <a
           className="App-link"

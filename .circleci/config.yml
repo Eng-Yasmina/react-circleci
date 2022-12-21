@@ -31,7 +31,7 @@ jobs:
 
       - run:
           name: Deploy at Netlify
-          command: npm run depoly
+          command: npm run deploy # run the "deploy" package script
 
 workflows:
   build_deploy:

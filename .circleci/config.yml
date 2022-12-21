@@ -3,9 +3,14 @@ version: 2.1
 jobs:
   deploy:
     docker:
-      - image: cimg/node:16.10
+      - image: cimg/base:stable
     steps:
       - checkout
+
+      - node/install:
+          install-yarn: true
+          node-version: '18.12'
+      - run: node --version
 
       # Download and cache dependencies
       - restore_cache:

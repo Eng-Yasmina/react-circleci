@@ -18,8 +18,8 @@ jobs:
 
       - save_cache:
           paths:
-            -noded_modules
-            key: v1-dependencies-{{ checksum "package.json"}}
+            - noded_modules
+          key: v1-dependencies-{{ checksum "package.json"}}
 
       - run:
           name: Run Tests

@@ -1,19 +1,11 @@
 version: 2.1
 
-orbs:
-  node: circleci/node@5.0.3
-
 jobs:
   deploy:
     docker:
-      - image: cimg/base:stable
+      - image: circleci/node@5.0.3
     steps:
       - checkout
-
-      - node/install:
-          install-yarn: true
-          node-version: '18.12'
-      - run: node --version
 
       # Download and cache dependencies
       - restore_cache:

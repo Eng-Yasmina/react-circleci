@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   deploy:
     docker:
-      - image: circleci/node@5.0.3
+      - image: cimg/node:18.12.1
     steps:
       - checkout
 
